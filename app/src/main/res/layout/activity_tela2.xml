@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingTop="70dp"
+    tools:context="imc.imc.imc.Tela2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="IMC CALC"
+        android:textAlignment="center"
+        android:textColor="#378027"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <EditText
+        android:id="@+id/editePeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="Digite seu peso: Kg"
+        android:imeOptions="actionDone|actionNext"
+        android:inputType="number"
+        android:paddingTop="48dp"
+        android:maxLength="3"
+        android:textColorHint="#878787"/>
+
+    <EditText
+        android:id="@+id/editeAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="Digite sua altura: Cm"
+        android:imeOptions="actionDone|actionNext"
+        android:inputType="number|numberDecimal"
+        android:maxLength="4"
+        android:paddingTop="30dp"
+        android:textColorHint="#878787"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#378027"
+        android:orientation="horizontal"
+        android:text="Calcular"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:background="@drawable/icons8_broom_50"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:inputType="textMultiLine" />
+
+
+
+</LinearLayout>
